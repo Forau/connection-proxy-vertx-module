@@ -1,0 +1,13 @@
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+<<<<<<< HEAD
+.nb-gradle/
+||||||| merged common ancestors
+=======
+/.nb-gradle/private/
+
+
+>>>>>>> ed5b3a67a62141c2895df5b7a23cb2c9d7be404e
