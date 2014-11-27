@@ -12,11 +12,13 @@ class MessageCommand {
     private final ACTION action;
     private final String uid;
     private final String message;
+    private final JsonObject raw;
     
     public MessageCommand(JsonObject jsonMessage) {
         this.action = parseAction(jsonMessage.getString(ACTION_PARAMETER));
         this.uid = jsonMessage.getString(UID_PARAMETER);
         this.message = jsonMessage.getString(MESSAGE_PARAMETER);
+        this.raw = jsonMessage;
     }
     
     private ACTION parseAction(String string) {
@@ -37,6 +39,10 @@ class MessageCommand {
 
     public String getMessage() {
         return message;
+    }
+
+    public JsonObject getRawMessage() {
+        return raw;
     }
 
     @Override

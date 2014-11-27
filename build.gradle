@@ -76,8 +76,8 @@ def configurePom(def pom) {
     developers {
       developer {
         id 'Forau'
-        name 'David Gregenas'
-        email 'david.gregenas@gmail.com'
+        name 'Forau'
+        email 'forau@shellmix.com'
       }
     }
 
